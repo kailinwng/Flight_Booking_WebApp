@@ -1,0 +1,129 @@
+/* Style for PopUps */
+.demo-list-control {
+  width: 225px;
+}
+.demo-list-icon {
+  width: 300px;
+}
+#popup {
+  width: 300px;
+}
+
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.dot {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.table{
+  margin:20px;
+}
+
+.mdl-layout__drawer > .mdl-layout-title {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#map {
+  height: calc(100vh - 65px);
+}
+
+checkboxes {
+  align-items: flex-start;
+}
+
+#locator {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 200;
+  height: 70px; width: 200px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+#buttonLocator {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#layoverTable {
+  width: 100%;
+}
+/* Schedule a Flight */
+h4 {
+  font-family: monospace;
+  color: blue;
+}
+
+
+
+
+/* Modal Box */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #add8e6;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#originInput {
+  border-style: hidden;
+  width: 70%;
+}
+
+
+.coordinates {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  border-radius: 3px;
+  display: none;
+}

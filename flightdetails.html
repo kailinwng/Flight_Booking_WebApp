@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Flights</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+  <!-- Fixed Header -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <!-- Header Section  -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title" id="flightnumber">Flight Details</span>
+        <div class="mdl-layout-spacer"></div>
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="prevPage()">
+          back
+        </button>
+      </div>
+    </header>
+    <!-- End of Header Section  -->
+    <!-- Drawer -->
+    <div class="mdl-layout__drawer">
+      <!-- Logo -->
+      <img src="images\logo.jpg" height=100px width=100px >
+      <span class="mdl-layout-title">
+        Doctors Without Border
+      </span>
+      <!-- Navigation  -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Main Page</a>
+        <a class="mdl-navigation__link" href="schedule.html">Schedule a Flight</a>
+        <a class="mdl-navigation__link" href="myflights.html">My Flights</a>
+        <a class="mdl-navigation__link" href="fleetInfo.html">Fleet Info</a>
+      </nav>
+      <!-- End of Navigation  -->
+    </div>
+    <!-- End of Drawer  -->
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
+          <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric">Date</th>
+              <th class="mdl-data-table__cell--non-numeric">Time</th>
+              <th class="mdl-data-table__cell--non-numeric">Origin</th>
+              <th class="mdl-data-table__cell--non-numeric">Destination</th>
+              <th class="mdl-data-table__cell--non-numeric">Plane</th>
+              <th class="mdl-data-table__cell--non-numeric">Duration</th>
+              <th class="mdl-data-table__cell--non-numeric">Origin Weather</th>
+              <th class="mdl-data-table__cell--non-numeric">Destination Weather</th>
+              <th class="mdl-data-table__cell--non-numeric">Distance</th>
+              <th class="mdl-data-table__cell--non-numeric">Arrival Date</th>
+              <th class="mdl-data-table__cell--non-numeric">Arrival Time</th>
+              <td> </td>
+            </tr>
+          </thead>
+          <tbody id="flightDetails">
+            <tr>
+              <td>26/9</td>
+              <td>9:00 AM</td>
+              <td>Singapore</td>
+              <td>Changi Airport</td>
+              <td>Changi Airport</td>
+              <td>Changi Airport</td>
+              <td>Changi Airport</td>
+              <td>Changi Airport</td>
+              <td>Changi Airport</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="mdl-button mdl-js-button mdl-button--accent" onclick="deleteRoute()">
+          X Delete Route
+        </button>
+      </div>
+    </main>
+  </div>
+  <script src="scripts\shared.js"></script>
+  <script src="scripts\myFlights.js"></script>
+  <script src="scripts\flightDetails.js"></script>
+</body>
+</html>
